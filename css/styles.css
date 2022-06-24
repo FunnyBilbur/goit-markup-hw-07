@@ -176,12 +176,12 @@ p {
   align-items: center;
 }
 
-.header-contact-icons {
+.contact-header__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-/* Секция героя */
+/* Hero Section */
 .section-hero {
   text-align: center;
   background-color: var(--secondary-background-color);
@@ -198,7 +198,7 @@ p {
   background-size: cover;
 }
 
-.section-title {
+.section-hero__heading {
   color: var(--primary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -216,7 +216,7 @@ p {
   margin-bottom: 30px;
 }
 
-.accent-button {
+.button--accent {
   background-color: var(--accent-color);
   color: var(--primary-text-color);
   cursor: pointer;
@@ -238,11 +238,34 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.accent-button:hover {
+.button--accent:hover {
   background-color: var(--accent-hover);
 }
-/* Секция Особенности */
-.feature-title {
+
+/* Features Section */
+.features {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features__item + .features__item {
+  margin-left: 30px;
+}
+.features__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: var(--our-team-color);
+}
+.features__heading {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -253,30 +276,11 @@ p {
   margin-bottom: 10px;
 }
 
-.feature-list {
-  display: flex;
-  align-items: center;
-}
-
-.feature-list .item + .item {
-  margin-left: 30px;
-}
-.feature-text {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
+
   margin: 0;
-}
-
-.feature-list .feature-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-
-  background-color: var(--our-team-color);
 }
 
 /* Секция Чем мы занимаемся? */
