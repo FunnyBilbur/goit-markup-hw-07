@@ -514,7 +514,7 @@
         <span class="backdrop__text">Оставьте свои данные, мы вам перезвоним</span>
 
         <form class="contact-form" autocomplete="off">
-          <label for="first_name" class="contact-form__first-name">Имя</label>
+          <label for="first_name" class="contact-form__text">Имя</label>
           <div class="contact-form__input-container">
             <input
               class="contact-form__input-field"
@@ -527,7 +527,7 @@
               <use href="./images/icons.svg#icon-username"></use>
             </svg>
           </div>
-          <label for="phone_number" class="label-text">Телефон</label>
+          <label for="phone_number" class="contact-form__text">Телефон</label>
           <div class="contact-form__input-container">
             <input
               class="contact-form__input-field"
@@ -541,7 +541,7 @@
             </svg>
           </div>
 
-          <label for="email-field" class="label-text">Почта</label>
+          <label for="email-field" class="contact-form__text">Почта</label>
           <div class="contact-form__input-container">
             <input
               class="contact-form__input-field"
@@ -555,7 +555,7 @@
             </svg>
           </div>
 
-          <label for="comment" class="label-text">Комментарий</label>
+          <label for="comment" class="contact-form__text">Комментарий</label>
           <textarea
             class="contact-form__input-field-comment"
             name="comment"
@@ -567,24 +567,24 @@
           ></textarea>
 
           <!-- Design of checkbox -->
-          <label class="agreement-form">
+          <label class="agreement">
             <span class="checkbox-container">
-              <input class="checkbox-agreement" type="checkbox" name="agreement" required />
-              <svg class="checkbox-icon-checked" width="16" height="15">
+              <input class="checkbox" type="checkbox" name="agreement" required />
+              <svg class="checkbox__icon--checked" width="16" height="15">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
-              <span class="checkbox-icon-unchecked"></span>
+              <span class="checkbox__icon--unchecked"></span>
             </span>
             <!--  -->
-            <span class="checkbox-label"
+            <span class="agreement__label"
               >Соглашаюсь с рассылкой и принимаю
-              <a class="checkbox-label-link" href="" target="_blank" rel="noopener noreferrer"
+              <a class="agreement__link" href="" target="_blank" rel="noopener noreferrer"
                 >Условия договора</a
               >
             </span>
           </label>
 
-          <button class="submit-form-button" type="submit">Отправить</button>
+          <button class="contact-form__submit-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
