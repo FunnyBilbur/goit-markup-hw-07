@@ -17,14 +17,12 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body style="padding-top: 81px">
     <!-- Header -->
     <header class="page-header">
       <div class="container main-header">
         <nav class="site-nav">
-          <a href="./index.html" class="site-nav__logo"
-            ><span class="site-nav__logo-web">Web</span>Studio</a
-          >
+          <a href="./index.html" class="site-nav__logo"><span class="logo-web">Web</span>Studio</a>
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a>
@@ -362,37 +360,37 @@
       </section>
 
       <!-- Our Clients Section -->
-      <section class="section">
+      <section class="our-clients">
         <div class="container">
-          <h2 class="our-clients-title">Постоянные клиенты</h2>
-          <ul class="our-clients-list list">
-            <li class="our-clients-item">
-              <a class="client-link link" href="" aria-label="company-logo">
+          <h2 class="our-clients__heading">Постоянные клиенты</h2>
+          <ul class="our-clients__list list">
+            <li class="our-clients__item">
+              <a class="our-clients__link link" href="" aria-label="company-logo">
                 <svg width="106" height="60"><use href="./images/icons.svg#icon-logo-1"></use></svg
               ></a>
             </li>
-            <li class="our-clients-item">
-              <a class="client-link link" href="" aria-label="company-logo">
+            <li class="our-clients__item">
+              <a class="our-clients__link link" href="" aria-label="company-logo">
                 <svg width="106" height="60"><use href="./images/icons.svg#icon-logo-2"></use></svg
               ></a>
             </li>
-            <li class="our-clients-item">
-              <a class="client-link link" href="" aria-label="company-logo">
+            <li class="our-clients__item">
+              <a class="our-clients__link link" href="" aria-label="company-logo">
                 <svg width="106" height="60"><use href="./images/icons.svg#icon-logo-3"></use></svg
               ></a>
             </li>
-            <li class="our-clients-item">
-              <a class="client-link link" href="" aria-label="company-logo">
+            <li class="our-clients__item">
+              <a class="our-clients__link link" href="" aria-label="company-logo">
                 <svg width="106" height="60"><use href="./images/icons.svg#icon-logo-4"></use></svg
               ></a>
             </li>
-            <li class="our-clients-item">
-              <a class="client-link link" href="" aria-label="company-logo">
+            <li class="our-clients__item">
+              <a class="our-clients__link link" href="" aria-label="company-logo">
                 <svg width="106" height="60"><use href="./images/icons.svg#icon-logo-5"></use></svg
               ></a>
             </li>
-            <li class="our-clients-item">
-              <a class="client-link link" href="" aria-label="company-logo">
+            <li class="our-clients__item">
+              <a class="our-clients__link link" href="" aria-label="company-logo">
                 <svg width="106" height="60"><use href="./images/icons.svg#icon-logo-6"></use></svg
               ></a>
             </li>
@@ -401,43 +399,49 @@
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer-back">
-      <div class="footer-flex container">
-        <div class="footer-contacts-container">
-          <a href="./index.html" class="logo"
-            ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer__positioning container">
+        <div class="footer__contacts-container">
+          <a href="./index.html" class="site-nav__logo footer__logo"
+            ><span class="logo-web">Web</span><span class="footer__logo-studio">Studio</span></a
           >
           <address>
-            <ul class="footer-address-list list">
-              <li class="item">
+            <ul class="footer__address-list list">
+              <li class="footer__address-item">
                 <a
-                  class="contact-footer-list address"
+                  class="footer__address-link"
                   href="https://goo.gl/maps/GCz9mcJcmjAWSKVcA"
                   target="_blank"
                   lang="ru"
                   >г.Киев пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="item">
-                <a class="contact-footer-list email" href="mailto:info@example.com" target="_blank"
+              <li class="footer__address-item">
+                <a
+                  class="footer__address-link footer__address-link--opacity"
+                  href="mailto:info@example.com"
+                  target="_blank"
                   >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a class="contact-footer-list phone" href="tel:+380991111111" target="_blank"
+              <li class="footer__address-item">
+                <a
+                  class="footer__address-link footer__address-link--opacity"
+                  href="tel:+380991111111"
+                  target="_blank"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-links">
-          <p class="footer-text">присоединяйтесь</p>
-          <ul class="footer-social-list list">
-            <li class="social-item">
+        <div>
+          <p class="footer__social-heading">присоединяйтесь</p>
+          <ul class="footer__social-list list">
+            <li class="footer__social-item">
               <a
-                class="footer-social-link link"
+                class="footer__social-link link"
                 href="http://instagram.com"
                 target="_blank"
                 aria-label="instagram"
@@ -445,9 +449,9 @@
                   <use href="./images/icons.svg#instagram-icon"></use></svg
               ></a>
             </li>
-            <li class="social-item">
+            <li class="footer__social-item">
               <a
-                class="footer-social-link link"
+                class="footer__social-link link"
                 href="http://twitter.com"
                 target="_blank"
                 aria-label="instagram"
@@ -455,9 +459,9 @@
                   <use href="./images/icons.svg#twitter-icon"></use></svg
               ></a>
             </li>
-            <li class="social-item">
+            <li class="footer__social-item">
               <a
-                class="footer-social-link link"
+                class="footer__social-link link"
                 href="http://facebook.com"
                 target="_blank"
                 aria-label="instagram"
@@ -465,9 +469,9 @@
                   <use href="./images/icons.svg#facebook-icon"></use></svg
               ></a>
             </li>
-            <li class="social-item">
+            <li class="footer__social-item">
               <a
-                class="footer-social-link link"
+                class="footer__social-link link"
                 href="http://linkedin.com"
                 target="_blank"
                 aria-label="instagram"
@@ -477,21 +481,21 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe-container">
-          <b class="subscribe-text">Подпишитесь на рассылку</b>
-          <form class="subscribe-form" autocomplete="off">
+        <div class="footer__subscribe-container">
+          <b class="footer__subscribe-text">Подпишитесь на рассылку</b>
+          <form class="footer__subscribe-form" autocomplete="off">
             <label class="visually-hidden" for="email">Email</label>
             <input
-              class="email-form"
+              class="footer__email-field"
               type="email"
               id="email"
               name="user_email"
               placeholder="E-mail"
             />
-            <button class="subscribe-button" type="submit">
-              <span class="button-text"
+            <button class="footer__subscribe-button" type="submit">
+              <span class="footer__button-text"
                 >Подписаться
-                <svg class="subcribe-icon" width="24px" height="24px">
+                <svg class="footer__subcribe-icon" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </span>
@@ -501,41 +505,59 @@
       </div>
     </footer>
 
-    <!-- Backdrop -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-btn-close" type="button" data-modal-close>
+    <!-- Backdrop Contact-Form -->
+    <div class="backdrop backdrop__is-hidden" data-modal>
+      <div class="backdrop__modal">
+        <button class="backdrop__modal-btn-close" type="button" data-modal-close>
           <svg width="11" height="11"><use href="./images/icons.svg#icon-modal-close"></use></svg>
         </button>
-        <span class="contact-form-text">Оставьте свои данные, мы вам перезвоним</span>
+        <span class="backdrop__text">Оставьте свои данные, мы вам перезвоним</span>
 
         <form class="contact-form" autocomplete="off">
-          <label for="first_name" class="label-text">Имя</label>
-          <div class="input-container">
-            <input class="input-field" type="text" name="first_name" id="first_name" required />
-            <svg class="input-icon" width="15px" height="15px">
+          <label for="first_name" class="contact-form__first-name">Имя</label>
+          <div class="contact-form__input-container">
+            <input
+              class="contact-form__input-field"
+              type="text"
+              name="first_name"
+              id="first_name"
+              required
+            />
+            <svg class="contact-form__input-icon" width="15px" height="15px">
               <use href="./images/icons.svg#icon-username"></use>
             </svg>
           </div>
           <label for="phone_number" class="label-text">Телефон</label>
-          <div class="input-container">
-            <input class="input-field" type="tel" name="phone_number" id="phone_number" required />
-            <svg class="input-icon" width="15px" height="15px">
+          <div class="contact-form__input-container">
+            <input
+              class="contact-form__input-field"
+              type="tel"
+              name="phone_number"
+              id="phone_number"
+              required
+            />
+            <svg class="contact-form__input-icon" width="15px" height="15px">
               <use href="./images/icons.svg#icon-phone-2"></use>
             </svg>
           </div>
 
           <label for="email-field" class="label-text">Почта</label>
-          <div class="input-container">
-            <input class="input-field" type="email" name="email" id="email-field" required />
-            <svg class="input-icon" width="15px" height="15px">
+          <div class="contact-form__input-container">
+            <input
+              class="contact-form__input-field"
+              type="email"
+              name="email"
+              id="email-field"
+              required
+            />
+            <svg class="contact-form__input-icon" width="15px" height="15px">
               <use href="./images/icons.svg#icon-email-2"></use>
             </svg>
           </div>
 
           <label for="comment" class="label-text">Комментарий</label>
           <textarea
-            class="input-field-comment"
+            class="contact-form__input-field-comment"
             name="comment"
             id="comment"
             cols="30"
