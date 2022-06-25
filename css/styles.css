@@ -882,13 +882,6 @@ p {
 
   transition: fill 250ms var(--transition-function);
 }
-/* .label-agreement-text {
-  display: block;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--secondary-text-color);
-} */
 
 .agreement {
   display: flex;
