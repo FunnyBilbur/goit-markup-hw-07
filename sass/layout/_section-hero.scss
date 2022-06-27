@@ -53,6 +53,6 @@
     transition: background-color 250ms $transition-function;
 
     &:hover{
-        background-color: $accent-color;
+        background-color: $accent-hover;
     }
 }

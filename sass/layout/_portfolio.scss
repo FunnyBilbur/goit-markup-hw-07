@@ -1,32 +1,30 @@
 /*  */
 /* Portfolio Page */
-/*  */
-/* Buttons Selector */
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .portfolio__btn-list {
+    @extend %list;
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+
+    .portfolio__btn-name {
+            padding-top: 6px;
+            padding-right: 22px;
+            padding-bottom: 6px;
+            padding-left: 22px;
+        }
 }
 
 .portfolio__btn-item+.portfolio__btn-item {
     margin-left: 8px;
 }
-
-.portfolio__btn-list .portfolio__btn-name {
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px;
-}
-
 .portfolio__btn-name {
-    background-color: var(--our-team-color);
-    color: var(--title-text-color);
+    background-color: $our-team-color;
+    color: $title-text-color;
     border-radius: 4px;
     border: transparent;
     font-weight: 500;
@@ -35,21 +33,19 @@
     /* identical to box height, or 162% */
     text-align: center;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Buttong Hover and Focus */
-.portfolio__btn-name:hover,
-.portfolio__btn-name:focus,
-.portfolio__btn-name--active {
-    color: var(--primary-text-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+    transition: background-color 250ms $transition-function,
+    color 250ms $transition-function, box-shadow 250ms $transition-function;
+    
+    &:hover, &:focus, &--active{
+        color: $primary-text-color;
+            background-color: $accent-color;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    }
 
 .portfolio__project-list {
+    @extend %list;
     display: flex;
     flex-wrap: wrap;
 }
@@ -64,16 +60,15 @@
 }
 
 .portfolio__project-link {
+    @extend %link;
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: box-shadow 250ms $transition-function;
 
-.portfolio__project-link:hover,
-.portfolio__project-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-
-    transform: translateY(0%);
+    &:hover, &:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+            transform: translateY(0%);
+    }
 }
 
 .portfolio__project-overlay {
@@ -96,16 +91,18 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
-    background-color: var(--accent-background-color);
-    color: var(--primary-text-color);
+    background-color: $accent-background-color;
+    color: $primary-text-color;
 
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: transform 250ms $transition-function;
 
-.portfolio__project-link:hover .portfolio__project-text,
-.portfolio__project-link:focus .portfolio__project-text {
-    transform: translateY(0);
+    .portfolio__project-link:hover &{
+        transform: translateY(0);
+    }
+    .portfolio__project-link:focus &{
+        transform: translateY(0);
+    }
 }
 
 .portfolio__project-description {
@@ -113,13 +110,13 @@
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
-    border-bottom: 1px solid var(--portfolio-cards-border-color);
-    border-left: 1px solid var(--portfolio-cards-border-color);
-    border-right: 1px solid var(--portfolio-cards-border-color);
+    border-bottom: 1px solid $portfolio-cards-border-color;
+    border-left: 1px solid $portfolio-cards-border-color;
+    border-right: 1px solid $portfolio-cards-border-color;
 }
 
 .portfolio__project-name {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -128,7 +125,11 @@
 }
 
 .portfolio__project-type {
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     font-size: 16px;
     line-height: 1.88;
+}
+
+.portfolio--visually-hidden{
+    @extend %visually-hidden;
 }
