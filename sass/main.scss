@@ -2,7 +2,17 @@
 @import './abstracts/placeholders';
 @import './abstracts/variables';
 
-@import'./layout/body';
-
 @import './components/backdrop';
+
+@import './layout/header';
+@import './layout/logo';
+@import './layout/navigation';
+@import './layout/section-hero';
+@import './layout/section-features';
+@import './layout/section-about-us';
+@import './layout/section-our-team';
+@import './layout/section-our-clients';
+@import './layout/footer';
 @import './layout/backdrop-contact-form';
+@import './layout/portfolio';
+
